@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share My Location</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Share My Location</h1>
+    <p class="intro">Tap the button below to share your current location. Your browser will ask for permission.</p>
+
+    <button id="shareBtn">Share My Location</button>
+
+    <div id="status" class="status" aria-live="polite">Ready.</div>
+
+    <div id="result" class="result hidden">
+      <div><strong>Latitude:</strong> <span id="lat">-</span></div>
+      <div><strong>Longitude:</strong> <span id="lng">-</span></div>
+      <div><strong>Accuracy:</strong> <span id="accuracy">-</span></div>
+      <a id="mapLink" target="_blank" rel="noopener noreferrer">Open location in Google Maps</a>
+    </div>
+
+    <p class="privacy">Only the location you choose to share is sent to the configured database.</p>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
