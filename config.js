@@ -1,2 +1,2 @@
-export const SUPABASE_URL = "sb_publishable_qUbEpZBl0DCrdViE8-JP7A_l6i98xXl";
-export const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFhY3ptdmJsdGRwbm5tcHJ4cHl6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAyNTg0ODMsImV4cCI6MjEwNTgzNDQ4M30.oXVmikHExovL73Sz44YWB4v9KRvYgHfi1xSsCsnROYE";
+export const SUPABASE_URL = "qaczmvbltdpnnmprxpyz";
+export const SUPABASE_ANON_KEY = "sb_publishable_qUbEpZBl0DCrdViE8-JP7A_l6i98xXl";
