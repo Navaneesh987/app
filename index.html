@@ -3,28 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Share My Location</title>
+
+  <title>Location Share</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <main class="card">
-    <h1>Share My Location</h1>
-    <p class="intro">Tap the button below to share your current location. Your browser will ask for permission.</p>
 
-    <button id="shareBtn">Share My Location</button>
+  <main class="container">
 
-    <div id="status" class="status" aria-live="polite">Ready.</div>
+    <div class="card">
 
-    <div id="result" class="result hidden">
-      <div><strong>Latitude:</strong> <span id="lat">-</span></div>
-      <div><strong>Longitude:</strong> <span id="lng">-</span></div>
-      <div><strong>Accuracy:</strong> <span id="accuracy">-</span></div>
-      <a id="mapLink" target="_blank" rel="noopener noreferrer">Open location in Google Maps</a>
+      <h1>📍 Share Your Location</h1>
+
+      <p class="description">
+        Click the button below and allow location access.
+      </p>
+
+      <button id="shareBtn" type="button">
+        Share My Location
+      </button>
+
+      <div id="status" class="status">
+        Ready to get your location.
+      </div>
+
+      <div id="result" class="result hidden">
+
+        <div class="location-box">
+          <p>
+            <strong>Latitude</strong>
+            <span id="lat">-</span>
+          </p>
+
+          <p>
+            <strong>Longitude</strong>
+            <span id="lng">-</span>
+          </p>
+
+          <p>
+            <strong>Accuracy</strong>
+            <span id="accuracy">-</span>
+          </p>
+        </div>
+
+        <a
+          id="mapLink"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="map-button"
+        >
+          🗺️ Open in Google Maps
+        </a>
+
+      </div>
+
     </div>
 
-    <p class="privacy">Only the location you choose to share is sent to the configured database.</p>
   </main>
 
-  <script type="module" src="app.js"></script>
+  <script type="module" src="./app.js"></script>
+
 </body>
 </html>
